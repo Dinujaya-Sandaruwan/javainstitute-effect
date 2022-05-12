@@ -1,0 +1,72 @@
+@use '../util/' as u;
+
+.main-body{  
+    .btns{
+        position: fixed;
+        z-index: 10;
+        top: 40%;
+        right: u.rem(5);
+        display: flex;
+        flex-direction: column;
+        // height: 50px;
+        justify-content: space-between;
+
+        &-up, &-down{
+            padding: 20px;
+            border: 2px solid white;
+            background-color: rgb(95, 95, 95);
+            margin: 10px;
+            color: white;
+            font-family: u.$font-fam;
+            font-weight: 900;
+            font-size: u.rem(20);
+            box-shadow: 5px 5px 10px rgba(#0000, 0.5);
+            cursor: pointer;
+            transition: 0.4s;
+            border-radius: u.rem(10);
+        }
+
+        &-up:hover, &-down:hover{
+            background-color: #000;
+        }
+    }
+
+    .div-one{
+        &-1, &-2 {
+            width: 50%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            z-index: 1;
+        }
+
+        &-1{
+            background-color: green;
+            // background-color: transparent;
+            left: 0px;
+        }
+        &-2{
+            background-color: rgb(231, 227, 0);
+            right: 0px;
+        }
+
+    }
+
+    .div-tow{
+        &-1, &-2 {
+            width: 50%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            z-index: 1;
+        }
+    }
+}
+
+.box-shadow-right {
+    box-shadow: -10px 0px 10px rgba(#0000, 0.5);
+}
+
+.box-shadow-left {
+    box-shadow: 5px 0px 10px rgba(#0000, 0.5);
+}
