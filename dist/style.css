@@ -94,12 +94,12 @@ a, a:visited, a:active {
 .main-body .div-one-1 {
   background-color: green;
   left: 0px;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .main-body .div-one-2 {
   background-color: rgb(231, 227, 0);
   right: 0px;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .main-body .div-tow-1, .main-body .div-tow-2 {
   width: 50%;
