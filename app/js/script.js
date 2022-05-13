@@ -30,16 +30,16 @@ count = count - 1;
 let downn = false;
 
 function fnDown() {
+    let count = 1;
     let div_one_1 = document.getElementById('div-one-1');
     let div_one_2 = document.getElementById('div-one-2');
-    let count = 1;
     if (downn == false) {
         setInterval(() => {
             if (count < 51) {
                 div_one_1.style.left ='-' + count + 'vw';
                 div_one_2.style.right ='-' + count + 'vw';
                 count = count + 1;  
-                console.log(count)   
+                console.log('-' + count + 'vw')   
                 
             }       
           }, 8)
@@ -56,7 +56,8 @@ function fnUp() {
                 div_one_1.style.left =count + 'vw';
                 let div_one_2 = document.getElementById('div-one-2');
                 div_one_2.style.right =count + 'vw';
-                count = count + 1         
+                count = count + 1 
+                console.log(count)        
             } 
           }, 8)
 
